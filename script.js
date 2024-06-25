@@ -3,7 +3,7 @@ const inp=document.getElementById("in");
 const button=document.querySelector("button");
 
 button.addEventListener("click",()=>{
-    if (inp.value==" ")
+    if (inp.value==="")
      alert("You must Write Something");
     else{
         let task=document.createElement("li");
