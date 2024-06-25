@@ -66,6 +66,8 @@ li{
     list-style: none;
     padding: .5rem 1rem .5rem 1.5rem ;
     position: relative;
+    user-select: none;
+    cursor: pointer;
 }
 
 ul li::before{
@@ -79,11 +81,27 @@ ul li::before{
     top: .9rem;
 }
 
-ul li.checked{
+.checked{
     color: rgba(0, 0, 0,0.6);
     text-decoration: line-through;
 }
 
 ul li.checked::before{
     background: url(./Assets/Images/checked.png) no-repeat center/cover;
+}
+
+ul li span{
+    position: absolute;
+    font-size: 1.5rem;
+    top: .4rem;
+    right: 2rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+} 
+
+ul li span:hover{
+    background-color: rgba(0, 0, 0,0.1);
 }
