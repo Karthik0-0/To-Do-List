@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;  
+    position: static;
+    background-color: aqua;
+
+}
+
+.list{
+    background-color: white;
+    width: 100%;
+    max-width: 32rem;
+    max-height: 30rem;
+    margin: 5rem auto;
+    border-radius: 1rem;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 2rem;
+    width: 100%;
+    border-radius: 1rem;
+    margin: 1rem auto;
+}
+
+
+input[type="text"]{
+    width: 90%;
+    outline: none;
+    border: none;
+    background: rgba(0, 0, 0,0.1);
+    border-radius: 1rem;
+    padding: .7rem;
+    font-weight: 500;
+    font-size:1.2rem;
+}
+
+
+button{
+    color: white;
+    width: 15%;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: .7rem 1rem;
+    border-radius: 1rem ;
+    margin-left: -2rem;
+    background-color:rgb(17, 26, 23);
+}
+
+li{
+    font-size: 1.2rem;
+    font-weight: 500;
+    list-style: none;
+    padding: .5rem 1rem .5rem 1.5rem ;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute; 
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background: url(./Assets/Images/unchecked.webp) no-repeat center/cover;
+    left:0;
+    top: .9rem;
+}
+
+ul li.checked{
+    color: rgba(0, 0, 0,0.6);
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background: url(./Assets/Images/checked.png) no-repeat center/cover;
+}
